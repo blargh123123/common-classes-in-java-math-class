@@ -34,7 +34,9 @@ public class Volume {
      * @return The volume of a cube.
      */
     // todo: create the cube() method as described above
-
+    public static double cube(double edge){
+        return Math.pow(edge, 3);
+    }
 
     /**
      * Create a method named cone(). This method should be static and publicly
@@ -57,7 +59,9 @@ public class Volume {
      * @return The volume of the cone
      */
     // todo: create the cone() method as described above
-
+    public static double cone(double radius, double height){
+        return Math.PI * Math.pow(radius, 2) * (height / 3);
+    }
 
     /**
      * Create a method named sphere(). This method should be static and publicly
@@ -79,6 +83,8 @@ public class Volume {
      * @return
      */
     // todo: create a method to calculate the area of a sphere
-
+    public static double sphere(double radius){
+        return (4/3d) * Math.PI * Math.pow(radius, 3);
+    }
 
 }
